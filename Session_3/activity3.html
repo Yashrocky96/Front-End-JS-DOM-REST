@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="card">
+      <h1>New Student</h1>
+      <h3>Role</h3>
+      <p>Bio Text Goes Here</p>
+    </section>
+
+    <script>
+      function updateCard(elem, name, role, bio) {
+        elem.children[0].innerText = name;
+        elem.children[1].innerText = role;
+        elem.children[2].innerText = bio;
+      }
+
+      const cardElement = document.getElementById("card");
+      updateCard(cardElement, "Vivek", "Instructor", "Teaches FE-2");
+    </script>
+  </body>
+</html>
